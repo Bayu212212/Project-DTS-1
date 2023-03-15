@@ -120,6 +120,24 @@
   .nav {
     height: 55px;
   }
+  .kontak__container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .kontak__konten{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin:0px;
+  }
+
+  .kontak__form{
+    width: 100%;
+  }
+  .button{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -242,4 +260,34 @@
   .nav {
     width: 90%;
   }
+  .mengapa-section{
+    flex-direction: column;
+  }
+  .mengapa-logo{
+    justify-content: center;
+
+  }
+  .mengapa-logo img{
+    width:350px;
+  }
+  .mengapa-description{
+    padding: 37px 71px;
+    width: 100%;
+    justify-content: center;
+  }
+  .description-list{
+    justify-content: center;
+  }
+  .list-mengapa{
+    border:1px #DDDDDD solid;
+    border-radius: 4px;
+    padding:20px 12px;
+    font-weight: bold;
+    width: 60%;
+  }
+  .heading-description{
+    width: 100%;
+  }
+
+
 }

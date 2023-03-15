@@ -309,15 +309,18 @@ button {
   filter: none;
 }
 
+
 /* Kontak Section */
 .kontak .section__subtitle,
 .kontak .section__title {
   text-align: center;
+  
 }
 
 .kontak__container {
   row-gap: 48px;
   padding-bottom: 48px;
+  display:flex
 }
 
 .kontak__info {
@@ -413,3 +416,62 @@ button {
   border-color: var(--blue-primary);
   font-family: var(--font-secondary);
 }
+
+.kontak__konten{
+  width:45%;
+  margin:20px;
+}
+/* Mengapa Section */
+.mengapa-section{
+  font-family: var(--font-main);
+  display: flex;
+  padding-top:50px;
+  padding-bottom:50px;
+  justify-content: center;
+}
+.mengapa-description span{
+color:#0460ac;
+}
+
+.mengapa-description h2{
+  color: var(--main-text-color);
+}
+.mengapa-logo{
+  display: flex;
+  justify-content: end;
+}
+.mengapa-logo img{
+  width: 458px;
+  height: auto;
+  display: flex;
+
+}
+.mengapa-description{
+  padding-top:37px;
+  padding-left:71px;
+  width: 50%;
+}
+.mengapa-description span{
+  color:var(--blue-primary);
+}
+.mengapa-description p{
+  font-size:20px;
+  line-height: 142%;
+}
+.description-list p{
+  margin-top: 12px;
+}
+.description-list i{
+  margin-right: 5px;
+  background: #f1f8ff;
+  color: var(--blue-primary);
+  padding:10px;
+  border-radius: 4px;
+}
+.list-mengapa{
+  border:1px #DDDDDD solid;
+  border-radius: 4px;
+  padding:20px 12px;
+  font-weight: bold;
+}
+/* Mengapa Section Berakhir */
