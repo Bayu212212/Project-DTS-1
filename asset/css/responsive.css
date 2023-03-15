@@ -158,6 +158,36 @@
   .header__button {
     display: none;
   }
+  .mengapa-section{
+    flex-direction: column;
+  }
+  .mengapa-logo{
+    justify-content: center;
+
+  }
+  .mengapa-logo img{
+    width:350px;
+  }
+  .mengapa-description{
+    padding: 37px 71px;
+    width: 100%;
+    justify-content: center;
+  }
+  .description-list{
+    justify-content: center;
+  }
+  .list-mengapa{
+    border:1px #DDDDDD solid;
+    border-radius: 4px;
+    padding:5px 3px;
+    font-weight: bold;
+    width: 100%;
+    margin: auto;
+  }
+  .heading-description{
+    width: 100%;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -284,10 +314,10 @@
     padding:20px 12px;
     font-weight: bold;
     width: 60%;
+    margin: auto;
   }
   .heading-description{
-    width: 100%;
+    width: 60%;
+    margin: auto;
   }
-
-
 }
