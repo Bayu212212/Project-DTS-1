@@ -37,6 +37,19 @@
   .nav__link span {
     display: none;
   }
+
+  .container-pilihan {
+    padding: 20px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, max-content);
+  }
+
+  .card-box {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 426px) {
@@ -125,17 +138,17 @@
     flex-direction: column;
     align-items: stretch;
   }
-  .kontak__konten{
+  .kontak__konten {
     display: flex;
     justify-content: center;
-    width:100%;
-    margin:0px;
+    width: 100%;
+    margin: 0px;
   }
 
-  .kontak__form{
+  .kontak__form {
     width: 100%;
   }
-  .button{
+  .button {
     width: 100%;
   }
 }
@@ -158,35 +171,38 @@
   .header__button {
     display: none;
   }
-  .mengapa-section{
+  .mengapa-section {
     flex-direction: column;
   }
-  .mengapa-logo{
+  .mengapa-logo {
     justify-content: center;
-
   }
-  .mengapa-logo img{
-    width:350px;
+  .mengapa-logo img {
+    width: 350px;
   }
-  .mengapa-description{
+  .mengapa-description {
     padding: 37px 71px;
     width: 100%;
     justify-content: center;
   }
-  .description-list{
+  .description-list {
     justify-content: center;
   }
-  .list-mengapa{
-    border:1px #DDDDDD solid;
+  .list-mengapa {
+    border: 1px #dddddd solid;
     border-radius: 4px;
-    padding:5px 3px;
+    padding: 5px 3px;
     font-weight: bold;
     width: 100%;
     margin: auto;
   }
-  .heading-description{
+  .heading-description {
     width: 100%;
     margin: auto;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, max-content);
   }
 }
 
@@ -290,33 +306,32 @@
   .nav {
     width: 90%;
   }
-  .mengapa-section{
+  .mengapa-section {
     flex-direction: column;
   }
-  .mengapa-logo{
+  .mengapa-logo {
     justify-content: center;
-
   }
-  .mengapa-logo img{
-    width:350px;
+  .mengapa-logo img {
+    width: 350px;
   }
-  .mengapa-description{
+  .mengapa-description {
     padding: 37px 71px;
     width: 100%;
     justify-content: center;
   }
-  .description-list{
+  .description-list {
     justify-content: center;
   }
-  .list-mengapa{
-    border:1px #DDDDDD solid;
+  .list-mengapa {
+    border: 1px #dddddd solid;
     border-radius: 4px;
-    padding:20px 12px;
+    padding: 20px 12px;
     font-weight: bold;
     width: 60%;
     margin: auto;
   }
-  .heading-description{
+  .heading-description {
     width: 60%;
     margin: auto;
   }

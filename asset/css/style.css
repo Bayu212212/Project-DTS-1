@@ -48,7 +48,7 @@ h3 {
   color: var(--main-text-color);
   font-family: var(--font-main);
   font-weight: 500;
-  font-size:40px;
+  font-size: 40px;
 }
 
 p {
@@ -310,18 +310,75 @@ button {
   filter: none;
 }
 
+/* Pilihan Section */
+.cards {
+  gap: 20px;
+}
+
+.card__pilihan {
+  padding: 28px;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.img__rumah {
+  border-radius: 14px;
+  margin-bottom: 21px;
+}
+
+.nama__rumah {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.card__pilihan span,
+.alamat__rumah {
+  font-size: 14px;
+  color: var(--p-text-color);
+  font-family: var(--font-secondary);
+  margin-bottom: 24px;
+}
+
+.card__pilihan:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card__pilihan:hover .btn__harga {
+  color: var(--putih-color);
+  background-color: var(--blue-primary);
+  border: none;
+}
+
+.harga__label {
+  display: flex;
+  gap: 24px;
+}
+
+.harga__rumah {
+  font-size: 20px;
+  line-height: 20px;
+  transform: translateY(25%);
+}
+
+.btn__harga {
+  padding: 13px 30px;
+  color: var(--blue-primary);
+  background-color: var(--putih-color);
+  box-shadow: none;
+  border: 2px solid var(--blue-primary);
+  transition: 0.4s;
+}
 
 /* Kontak Section */
 .kontak .section__subtitle,
 .kontak .section__title {
   text-align: center;
-  
 }
 
 .kontak__container {
   row-gap: 48px;
   padding-bottom: 48px;
-  display:flex
+  display: flex;
 }
 
 .kontak__info {
@@ -418,20 +475,20 @@ button {
   font-family: var(--font-secondary);
 }
 
-.kontak__konten{
-  width:45%;
-  margin:20px;
+.kontak__konten {
+  width: 45%;
+  margin: 20px;
 }
 /* Section Pilihan */
-.container-pilihan{
+.container-pilihan {
   max-width: 100%;
   padding: 0 250px;
   margin: 0 auto;
 }
-.section-pilihan{
+.section-pilihan {
   margin-bottom: 100px;
 }
-.cards{
+.cards {
   display: flex;
   justify-content: space-between;
 }
@@ -449,7 +506,7 @@ button {
 .heading span {
   color: var(--blue-primary);
 }
-.card-box{
+.card-box {
   margin-right: 40px;
   width: 40%;
   height: auto;
@@ -459,16 +516,16 @@ button {
   margin-right: 40px;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 10px 10px rgba(0,0,0,.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-.btn{
-color: var(--blue-primary);
-padding: 7px 12px;
-border-radius: 7px;
-font-size: 12px;
-margin: 0px 0px 10px 30px;
-border: 1px var(--blue-primary) solid;
-float:right;
+.btn {
+  color: var(--blue-primary);
+  padding: 7px 12px;
+  border-radius: 7px;
+  font-size: 12px;
+  margin: 0px 0px 10px 30px;
+  border: 1px var(--blue-primary) solid;
+  float: right;
 }
 .card-box:hover .btn {
   color: rgb(255, 255, 255);
@@ -479,7 +536,7 @@ float:right;
   font-size: 12px;
   margin: 0px 0px 10px 30px;
   padding: 7px 12px;
-  background-color: #2888D6;
+  background-color: #2888d6;
   cursor: pointer;
 }
 .head-card img {
@@ -514,72 +571,195 @@ float:right;
   margin-bottom: 15px;
 }
 
-
-
 .book:active {
   position: relative;
   top: 7px;
   box-shadow: none;
 }
 
-
-
 /* Section Pilihan Berakhir */
 
 /* Mengapa Section */
-.mengapa-section{
+.mengapa-section {
   font-family: var(--font-main);
   display: flex;
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   justify-content: center;
 }
-.mengapa-description span{
-color:#0460ac;
-font-size: 20px;
+.mengapa-description span {
+  color: #0460ac;
+  font-size: 20px;
 }
 
-.mengapa-description h2{
+.mengapa-description h2 {
   color: var(--main-text-color);
-  font-size:40px;
+  font-size: 40px;
 }
-.mengapa-logo{
+.mengapa-logo {
   display: flex;
   justify-content: end;
 }
-.mengapa-logo img{
+.mengapa-logo img {
   width: 458px;
   height: auto;
   display: flex;
-
 }
-.mengapa-description{
-  padding-top:37px;
-  padding-left:71px;
+.mengapa-description {
+  padding-top: 37px;
+  padding-left: 71px;
   width: 50%;
 }
-.mengapa-description span{
-  color:var(--blue-primary);
+.mengapa-description span {
+  color: var(--blue-primary);
 }
-.mengapa-description p{
-  font-size:20px;
+.mengapa-description p {
+  font-size: 20px;
   line-height: 142%;
 }
-.description-list p{
+.description-list p {
   margin-top: 12px;
 }
-.description-list i{
+.description-list i {
   margin-right: 5px;
   background: #f1f8ff;
   color: var(--blue-primary);
-  padding:10px;
+  padding: 10px;
   border-radius: 4px;
 }
-.list-mengapa{
-  border:1px #DDDDDD solid;
+.list-mengapa {
+  border: 1px #dddddd solid;
   border-radius: 4px;
-  padding:20px 12px;
+  padding: 20px 12px;
   font-weight: bold;
   width: 80%;
 }
 /* Mengapa Section HBerakhir */
+
+/* Agen Section */
+.agen__cards {
+  gap: 30px;
+  justify-content: space-between;
+  grid-template-columns: repeat(3fr, max-content);
+}
+
+.agen__card {
+  padding: 28px 28px 70px 28px;
+  border-radius: 16px;
+  border: 1px solid var(--placeholder-text);
+  transition: 0.4s;
+}
+
+.agen__card:hover {
+  border: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+}
+
+.agen__img {
+  width: 221px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.agen__nama {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.agen__wa {
+  font-size: 15px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* Footer */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: var(--blue-primary);
+  color: #ffffff;
+  padding: 70px 0;
+}
+
+.footer__logo {
+  font-size: 28px;
+  color: var(--putih-color);
+}
+
+.footer-col {
+  width: 20%;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: rgba(0, 3, 255, 0.8);
+  padding-left: 8px;
+}
+
+.footer-col .social-media a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 10px 10px 0;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-media a:hover {
+  color: rgba(0, 3, 255, 0.8);
+  background-color: rgba(236, 236, 236, 0.8);
+}
+
+.fixed-footer {
+  width: 100%;
+  position: relative;
+  background: #333;
+  margin: 0 10px 10px 0;
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
