@@ -423,9 +423,13 @@ button {
   margin:20px;
 }
 /* Section Pilihan */
+.container-pilihan{
+  max-width: 100%;
+  padding: 0 250px;
+  margin: 0 auto;
+}
 .section-pilihan{
   margin-bottom: 100px;
-  border: 1px black solid;
 }
 .cards{
   display: flex;
@@ -445,15 +449,39 @@ button {
 .heading span {
   color: var(--blue-primary);
 }
-
-.card-box {
+.card-box{
   margin-right: 40px;
-  width: 25%;
+  width: 40%;
+  height: auto;
+  padding: 15px;
+}
+.card-box:hover {
+  margin-right: 40px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 10px 10px rgba(0,0,0,.1);
 }
-
+.btn{
+color: var(--blue-primary);
+padding: 7px 12px;
+border-radius: 7px;
+font-size: 12px;
+margin: 0px 0px 10px 30px;
+border: 1px var(--blue-primary) solid;
+float:right;
+}
+.card-box:hover .btn {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0px 0px 10px 30px;
+  padding: 7px 12px;
+  background-color: #2888D6;
+  cursor: pointer;
+}
 .head-card img {
   position: relative;
   width: 100%;
@@ -470,11 +498,13 @@ button {
 .body-card h5 {
   margin-top: 10px;
   font-size: 20px;
+  font-family: var(--font-main);
 }
 
 .body-card h4 {
   margin-top: 10px;
   font-size: 20px;
+  font-family: var(--font-main);
 }
 
 .body-card p {
@@ -484,34 +514,14 @@ button {
   margin-bottom: 15px;
 }
 
-.btn {
-  color: rgb(255, 255, 255);
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 7px;
-  text-align: center;
-  font-size: 12px;
-  margin: 0px 0px 10px 30px;
-}
 
-.btn:hover {
-  opacity: 1;
-}
-
-.book {    
-  padding: 7px 12px;
-  background-color: #2888D6;
-  cursor: pointer;
-}
 
 .book:active {
   position: relative;
   top: 7px;
   box-shadow: none;
 }
-.price-tag{
-  display: flex;
-}
+
 
 
 /* Section Pilihan Berakhir */
