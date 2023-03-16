@@ -1,3 +1,21 @@
+@media screen and (max-width: 320px) {
+  .agen__cards{
+    gap: 15px;
+    grid-template-columns: repeat(1, max-content);
+  }
+  
+  .agen__card{
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width:375px) {
+  .agen__cards {
+    grid-template-columns: repeat(1, max-content);
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .header {
     box-shadow: 0 1px 4px hsla(228, 4%, 15%, 0.1);
@@ -36,6 +54,10 @@
 
   .nav__link span {
     display: none;
+  }
+
+  .btn__cari{
+    padding: 8px 16px;
   }
 
   .container-pilihan {
@@ -107,7 +129,7 @@
   }
 
   .btn__cari {
-    padding: 12px 24px;
+    padding: 5px 10px;
     border-radius: 6px;
   }
 
@@ -142,6 +164,15 @@
   .nav {
     height: 55px;
   }
+
+  .btn__cari{
+    padding: 8px 10px;
+  }
+
+  .pilihan__cards {
+    grid-template-columns: repeat(1, max-content);
+  }
+
   .kontak__container {
     display: flex;
     flex-direction: column;
@@ -159,6 +190,12 @@
   }
   .button {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .agen__cards{
+    grid-template-columns: repeat(2, max-content);
   }
 }
 
@@ -180,6 +217,7 @@
   .header__button {
     display: none;
   }
+
   .mengapa-section {
     flex-direction: column;
   }
@@ -215,6 +253,12 @@
   }
 }
 
+@media screen and (max-width: 787px) {
+  .pilihan__cards {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
 @media screen and (min-width: 767px) {
   .hero__container {
     grid-template-columns: repeat(2, 1fr);
@@ -238,6 +282,21 @@
     grid-template-columns: repeat(4, max-content);
     justify-content: center;
   }
+
+  .agen__cards {
+    gap: 20px;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+@media screen and (min-width: 768px){
+  .agen__cards {
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, max-content);
+
+  }
 }
 
 @media screen and (min-width: 1023px) {
@@ -247,7 +306,7 @@
   }
 
   .section {
-    padding: 120px;
+    padding: 100px 120px;
   }
 
   .nav__menu {
@@ -315,6 +374,10 @@
   .nav {
     width: 90%;
   }
+
+  .pilihan__cards {
+    grid-template-columns: repeat(2, max-content);
+  }
   .mengapa-section {
     flex-direction: column;
   }
@@ -343,5 +406,12 @@
   .heading-description {
     width: 60%;
     margin: auto;
+  }
+}
+
+
+@media only screen and(max-width: 425px) and (min-width: 375px) {
+  .agen__cards{
+    grid-template-columns: repeat(1, max-content);
   }
 }
