@@ -251,11 +251,30 @@
   .cards {
     grid-template-columns: repeat(1, max-content);
   }
+  .footer-col h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 787px) {
+  .pilihan-section{
+    padding: 37px 71px;
+  }
   .pilihan__cards {
-    grid-template-columns: repeat(2, max-content);
+    margin: auto;
+    gap: 10px;
+    grid-template-columns: repeat(1, max-content);
+    justify-content: center;
+  }
+  .footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-col{
+    width: 100%;
   }
 }
 
@@ -388,7 +407,7 @@
     width: 350px;
   }
   .mengapa-description {
-    padding: 37px 71px;
+    padding: 37px 30px;
     width: 100%;
     justify-content: center;
   }
@@ -407,6 +426,28 @@
     width: 60%;
     margin: auto;
   }
+  .pilihan-section{
+    padding: 37px 71px;
+  }
+  .pilihan__cards {
+    margin: auto;
+    gap: 10px;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+  }
+  .footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-col{
+    width: 100%;
+  }
+  .footer-col h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -414,4 +455,28 @@
   .agen__cards{
     grid-template-columns: repeat(1, max-content);
   }
+  .footer {
+    position: static;
+  }
+  .footer-col {
+    width: 30%;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+  }
+
+  .footer-col h4 {
+    width: 30%;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+  }
+  .pilihan__cards {
+    gap: 10px;
+    grid-template-columns: repeat(2, max-content);
+  }
 }
+
+

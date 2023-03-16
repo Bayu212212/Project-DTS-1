@@ -547,14 +547,23 @@ button {
 /* Mengapa Section HBerakhir */
 
 /* Agen Section */
+
+.agen__container {
+  background-color : #F8FBFF;
+  text-align: center;
+
+}
 .section__description{
   margin-bottom: 25px;
 }
 
 .agen__cards {
-  gap: 30px;
-  justify-content: space-between;
-  grid-template-columns: repeat(3, max-content);
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
 }
 
 .agen__card {
@@ -611,17 +620,18 @@ button {
   background-color: var(--blue-primary);
   color: #ffffff;
   padding: 70px 0;
+  box-sizing: border-box;
 }
 
 .footer__logo {
-  font-size: 28px;
+  font-size: 20px;
   color: var(--putih-color);
 }
 
 .footer-col {
   width: 20%;
   padding: 0 15px;
-  font-size: 18px;
+  
 }
 
 .footer-col h4 {
