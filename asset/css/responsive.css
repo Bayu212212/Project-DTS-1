@@ -81,6 +81,9 @@
   .mengapa-description p{
     font-size: 16px;
   }
+  .pilihan-section{
+    padding: 37px 30px;
+  }
 }
 
 @media screen and (min-width: 426px) {
@@ -259,7 +262,7 @@
 
 @media screen and (max-width: 787px) {
   .pilihan-section{
-    padding: 37px 71px;
+    padding: 37px 50px;
   }
   .pilihan__cards {
     margin: auto;
@@ -477,6 +480,10 @@
     gap: 10px;
     grid-template-columns: repeat(2, max-content);
   }
+  .pilihan-section{
+    padding: 37px 20px;
+  }
+
 }
 
 
